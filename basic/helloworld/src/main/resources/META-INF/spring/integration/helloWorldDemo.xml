@@ -7,8 +7,14 @@
 			http://www.springframework.org/schema/integration
 			http://www.springframework.org/schema/integration/spring-integration.xsd">
 
+	<!-- creates a DirectChannel -->
 	<channel id="inputChannel"/>
 
+	<!-- 
+	when the queue is filled the inputChannel.send is blocked  
+	Each Message is placed in a BlockingQueue whose capacity may be specified upon construction
+	-->
+	<!-- creates a QueueChannel  -->
 	<channel id="outputChannel">
 		<queue capacity="10"/>
 	</channel>
