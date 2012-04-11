@@ -21,6 +21,7 @@ import java.io.File;
 /**
  * A class providing several handling methods for different types of payloads.
  * 
+ * 
  * @author Mark Fisher
  * @author Marius Bogoevici
  */
